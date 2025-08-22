@@ -7,7 +7,7 @@ const ibgeSchema = z.object({
     .refine((val) => val.length === 7, { message: 'IBGE deve ter 7 dígitos' }),
 });
 
-type IbgeFormValues = z.infer<typeof ibgeSchema>;
+// type IbgeFormValues = z.infer<typeof ibgeSchema>;
 
 export function ConsultaIbge() {
   return (
