@@ -1,19 +1,4 @@
-import { zodResolver } from '@hookform/resolvers/zod';
-import { useQuery } from '@tanstack/react-query';
-import { Search } from 'lucide-react';
-import { useState } from 'react';
-import { useForm } from 'react-hook-form';
 import z from 'zod';
-import { Button } from '@/components/ui/button';
-import {
-  Form,
-  FormControl,
-  FormField,
-  FormItem,
-  FormMessage,
-} from '@/components/ui/form';
-import { Input } from '@/components/ui/input';
-import { api } from '@/service/api';
 
 const ibgeSchema = z.object({
   ibge: z

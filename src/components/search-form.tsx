@@ -6,7 +6,8 @@ import {
   SidebarInput,
 } from '@/components/ui/sidebar';
 
-interface SearchFormProps extends React.ComponentProps<'form'> {
+interface SearchFormProps
+  extends Omit<React.ComponentProps<'form'>, 'onChange'> {
   value: string;
   onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
 }
