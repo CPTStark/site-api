@@ -1,11 +1,9 @@
-import z from 'zod';
-
-const ibgeSchema = z.object({
-  ibge: z
-    .string()
-    .transform((val) => val.replace(/\D/g, ''))
-    .refine((val) => val.length === 7, { message: 'IBGE deve ter 7 dígitos' }),
-});
+// const ibgeSchema = z.object({
+//   ibge: z
+//     .string()
+//     .transform((val) => val.replace(/\D/g, ''))
+//     .refine((val) => val.length === 7, { message: 'IBGE deve ter 7 dígitos' }),
+// });
 
 // type IbgeFormValues = z.infer<typeof ibgeSchema>;
 
